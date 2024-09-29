@@ -1,0 +1,26 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "React Chrome Extension",
+    "description": "This is a Chrome extension built with React and TypeScript",
+    "oauth2": {
+        "client_id": "1052743198429-688cic6lk2r27ltagce0vcn0osukhbi5.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/userinfo.profile",
+            "https://www.googleapis.com/auth/userinfo.email"
+        ]
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {},
+    "side_panel": {
+        "default_path": "js/index.html"
+    },
+    "permissions": [
+        "sidePanel",
+        "identity",
+        "tabs",
+        "notifications"
+    ]
+}
